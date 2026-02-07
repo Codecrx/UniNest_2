@@ -9,7 +9,7 @@
 ## API (Vercel)
 1. Create a new Vercel project and set the root directory to `apps/api`.
 2. Add environment variables from `.env.example` (especially `GOOGLE_APPLICATION_CREDENTIALS`, `RESEND_API_KEY`, and `EMAIL_FROM`).
-3. Set the build command to `npm install` and the output to `node src/index.js` (or use the default if deploying as a Node server).
+3. Ensure `vercel.json` is present so Vercel routes all traffic to `api/index.js`.
 4. Deploy and note the API URL for frontend calls.
 
 ## Frontend (Vercel)
